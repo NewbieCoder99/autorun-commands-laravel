@@ -1,0 +1,44 @@
+[
+    {
+        "command": "php artisan migrate",
+        "description": "Running Migrations",
+        "script_type": "migration",
+        "command_type": "recurring",
+        "environtment": "both"
+    },
+    {
+        "command": "php artisan route:clear",
+        "description": "Clear route",
+        "script_type": "console",
+        "command_type": "recurring",
+        "environtment": "both"
+    },
+    {
+        "command": "php artisan config:clear",
+        "description": "Clear config",
+        "script_type": "console",
+        "command_type": "recurring",
+        "environtment": "both"
+    },
+    {
+        "command": "php artisan view:clear",
+        "description": "Clear View",
+        "script_type": "console",
+        "command_type": "recurring",
+        "environtment": "both"
+    },
+    {
+        "command": "php artisan cache:clear",
+        "description": "Clear Cache",
+        "script_type": "console",
+        "command_type": "recurring",
+        "environtment": "both"
+    },
+    {
+        "command": "chmod -R 777 storage",
+        "description": "Set permission storage folder",
+        "script_type": "console",
+        "command_type": "recurring",
+        "environtment": "both"
+    }
+]
